@@ -29,6 +29,7 @@ export default {
         loop: "all",
         order: "list",
         preload: "auto",
+        cover:"https://cdn.jsdelivr.net/gh/kzinthant-d3v/playtube@main/dist/images/no-data.png",
         ...options,
         container: this.container,
         fixed: true,

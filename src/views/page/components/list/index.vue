@@ -33,17 +33,17 @@
             <use :xlink:href="icons(file.mimeType)" />
           </svg>
           {{ file.name }}
-          <span
+          <!-- <span
             class="has-text-grey g2-file-desc"
             v-if="isShowDesc"
             v-html="file.description"
-          ></span>
+          ></span> -->
         </td>
-        <td class="is-hidden-mobile is-hidden-touch">
+        <!-- <td class="is-hidden-mobile is-hidden-touch">
           {{ file.modifiedTime }}
-        </td>
-        <td class="is-hidden-mobile is-hidden-touch">{{ file.size }}</td>
-        <td class="is-hidden-mobile is-hidden-touch">
+        </td> -->
+        <td>{{ file.size }}</td>
+        <td>
           <span class="icon" @click.stop="action(file,'copy')">
             <i
               class="fa fa-copy faa-shake animated-hover"

@@ -1,14 +1,17 @@
 <template>
   <div class="content g2-content">
-    <object :data="url" type="application/pdf" name="file.pdf">
-      <embed :src="url" type="application/pdf" />
-    </object>
+    <vue-pdf-app :pdf="url"></vue-pdf-app>
   </div>
 </template>
 
 <script>
 import { decode64 } from "@utils/AcrouUtil";
+import VuePdfApp from "vue-pdf-app";
+
 export default {
+  components: {
+    VuePdfApp
+  },
   data: function() {
     return {};
   },
