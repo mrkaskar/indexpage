@@ -28,7 +28,7 @@ export default {
   computed: {
     url() {
       if (this.$route.params.path) {
-          return base64ToArrayBuffer(this.$$route.params.path);
+          return base64ToArrayBuffer(this.$route.params.path);
         //return decode64(this.$route.params.path);
       }
       return ''
