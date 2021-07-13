@@ -15,7 +15,6 @@ import VueLazyload from "vue-lazyload";
 import Viewer from "v-viewer";
 import cdnpath from "./libs/util.cdn";
 import VueFab from 'vue-float-action-button'
-import "vue-pdf-app/dist/icons/main.css";
 
 
 

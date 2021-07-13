@@ -1,12 +1,13 @@
 <template>
   <div class="content g2-content">
-    <vue-pdf-app pdf="url"></vue-pdf-app>
+    <object :data="url" type="application/pdf" name="file.pdf">
+      <embed :src="url" type="application/pdf" />
+    </object>
   </div>
 </template>
 
 <script>
 import { decode64 } from "@utils/AcrouUtil";
-import VuePdfApp from "vue-pdf-app";
 
 export default {
   components: {
@@ -32,6 +33,7 @@ export default {
 <style scoped>
 object{
     width: 100%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
+    height: 100vh;
 }
 </style>
