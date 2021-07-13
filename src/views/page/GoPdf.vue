@@ -1,6 +1,8 @@
 <template>
   <div class="content g2-content">
-    <object :data="url" type="application/pdf" name="file.pdf">
+    <object :data="url" type="application/pdf" name="file.pdf"
+    width="100%" height="800px"
+    >
       <embed :src="url" type="application/pdf" />
     </object>
   </div>
@@ -28,9 +30,9 @@ export default {
 </script>
 
 <style scoped>
-object{
+/* object{
     width: 100%;
     /* height: -webkit-fill-available; */
-    height: 800px;
-}
+    /* height: 800px; */
+    /* } */
 </style>
