@@ -10,9 +10,6 @@
 import { decode64 } from "@utils/AcrouUtil";
 
 export default {
-  components: {
-    VuePdfApp
-  },
   data: function() {
     return {};
   },
@@ -34,6 +31,6 @@ export default {
 object{
     width: 100%;
     /* height: -webkit-fill-available; */
-    height: 100vh;
+    height: 800px;
 }
 </style>
