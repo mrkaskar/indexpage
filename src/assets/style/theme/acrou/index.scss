@@ -46,14 +46,12 @@ tr:hover {
 }
 
 .breadcrumb ul {
-  flex-wrap: inherit;
+  flex-wrap: wrap;
+  color: white !important;
 }
 
 .breadcrumb li:not(:first-child):not(:last-child) {
   margin: 0 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .table {

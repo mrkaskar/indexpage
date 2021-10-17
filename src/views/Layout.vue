@@ -15,7 +15,7 @@
 
 <script>
 import Head from "./common/Head";
-import Footer from "./common/Footer";
+// import Footer from "./common/Footer";
 import APlayer from "./common/APlayer";
 export default {
   data: function () {
