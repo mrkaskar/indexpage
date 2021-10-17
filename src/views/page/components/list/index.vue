@@ -93,11 +93,6 @@ export default {
       return [
         { name: this.$t("list.title.file"), style: "" },
         {
-          name: this.$t("list.title.moditime"),
-          style: "width:20%",
-          class: "is-hidden-mobile is-hidden-touch",
-        },
-        {
           name: this.$t("list.title.size"),
           style: "width:10.5%",
           class: "is-hidden-mobile is-hidden-touch",
