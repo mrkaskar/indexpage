@@ -42,9 +42,9 @@
         <!-- <td class="is-hidden-mobile is-hidden-touch">
           {{ file.modifiedTime }}
         </td> -->
-        <td>{{ file.size }}</td>
+        <td class="is-hidden-mobile">{{ file.size }}</td>
         <td>
-          <span class="icon" @click.stop="action(file,'copy')">
+          <span class="icon is-hidden-mobile" @click.stop="action(file,'copy')">
             <i
               class="fa fa-copy faa-shake animated-hover"
               :title="$t('list.opt.copy')"
